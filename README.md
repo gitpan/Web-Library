@@ -89,6 +89,12 @@ permissive licenses.
     [File::ShareDir](https://metacpan.org/module/File::ShareDir). The `include_paths` method returns the absolute paths to
     shared directories for all managed libraries.
 
+    Returns a list in list context and an array reference in scalar context.
+
+- reset
+
+    Clears all mounted libraries.
+
 ## ASSET-RELATED METHODS
 
 Web::Library can also help you with including a library's CSS and JavaScript

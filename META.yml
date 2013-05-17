@@ -30,4 +30,4 @@ resources:
   bugtracker: https://github.com/marcelgruenauer/Web-Library/issues
   homepage: https://github.com/marcelgruenauer/Web-Library
   repository: git://github.com/marcelgruenauer/Web-Library.git
-version: 0.01
+version: 0.02

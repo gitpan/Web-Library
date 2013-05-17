@@ -2,7 +2,7 @@ package Web::Library;
 use MooseX::Singleton;
 use Params::Validate qw(:all);
 use Web::Library::Item;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 has 'libraries' => (
     traits  => ['Array'],
     is      => 'ro',
@@ -11,6 +11,7 @@ has 'libraries' => (
     handles => {
         all_libraries => 'elements',
         push_library  => 'push',
+        reset         => 'clear',
     },
 );
 
@@ -22,7 +23,8 @@ sub mount_library {
 
 sub include_paths {
     my $self = shift;
-    map { $_->include_path } $self->all_libraries;
+    my @paths = map { $_->include_path } $self->all_libraries;
+    wantarray ? @paths : \@paths;
 }
 
 sub library_map {
@@ -160,6 +162,12 @@ This parameter is optional; if omitted, the latest version is used.
 Client-side library files are installed as shared files as described in
 L<File::ShareDir>. The C<include_paths> method returns the absolute paths to
 shared directories for all managed libraries.
+
+Returns a list in list context and an array reference in scalar context.
+
+=item reset
+
+Clears all mounted libraries.
 
 =back
 

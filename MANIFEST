@@ -3,6 +3,7 @@ lib/Web/Library.pm
 lib/Web/Library/Item.pm
 lib/Web/Library/Provider.pm
 lib/Web/Library/SimpleAssets.pm
+lib/Web/Library/Test.pm
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
