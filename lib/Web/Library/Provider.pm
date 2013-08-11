@@ -4,7 +4,6 @@ use 5.14.0;
 use File::Spec;
 use File::ShareDir ();
 use Cwd qw(abs_path);
-our $VERSION = '0.01';
 requires qw(latest_version css_assets_for javascript_assets_for);
 
 # This is a version of dist_dir() that takes into account local
@@ -46,7 +45,6 @@ Web::Library::Provider - Moose role for client-side library distributions
     package Web::Library::Bootstrap;
     use Moose;
     with 'Web::Library::Provider';
-    our $VERSION = '0.01';
     sub latest_version { '2.3.1' }
 
 =head1 DESCRIPTION

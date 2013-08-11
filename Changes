@@ -1,5 +1,13 @@
 Revision history for Perl extension Web-Library
 
+0.04  2013-08-11 19:28:19 CEST
+    - first release with Dist::Milla
+
+0.03  2013-08-11 19:23:45 CEST
+    [Improvements]
+        - Converted the distribution to use Dist::Milla
+        - library_ok(): also output version number
+
 0.02 Fri May 17 08:47:31 2013 CEST
     [New Features]
         - Added Web::Library::Test testing helpers

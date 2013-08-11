@@ -1,6 +1,5 @@
 package Web::Library::SimpleAssets;
 use Moose::Role;
-our $VERSION = '0.01';
 requires qw(version_map);
 
 sub version_map_look_up {
@@ -31,7 +30,6 @@ Web::Library::SimpleAssets - Moose role for simple assets
     package Web::Library::Bootstrap;
     use Moose;
     with qw(Web::Library::Provider Web::Library::SimpleAssets);
-    our $VERSION = '0.01';
     
     sub version_map {
         +{  default => {

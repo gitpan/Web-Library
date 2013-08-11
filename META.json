@@ -1,10 +1,10 @@
 {
    "abstract" : "Manager for wrappers around client-side libraries",
    "author" : [
-      "Marcel Gruenauer <marcel@cpan.org>"
+      "The following person is the author of all the files provided in"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.130880",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +16,11 @@
    "no_index" : {
       "directory" : [
          "t",
-         "inc"
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
       ]
    },
    "prereqs" : {
@@ -27,7 +31,12 @@
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.58"
+            "Module::Build::Tiny" : "0.025"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::Pod" : "1.41"
          }
       },
       "runtime" : {
@@ -50,8 +59,14 @@
       },
       "homepage" : "https://github.com/marcelgruenauer/Web-Library",
       "repository" : {
-         "url" : "git://github.com/marcelgruenauer/Web-Library.git"
+         "type" : "git",
+         "url" : "https://github.com/marcelgruenauer/Web-Library.git",
+         "web" : "https://github.com/marcelgruenauer/Web-Library"
       }
    },
-   "version" : "0.02"
+   "version" : "0.04",
+   "x_contributors" : [
+      "Marcel Gruenauer <hanekomu@gmail.com>"
+   ]
 }
+

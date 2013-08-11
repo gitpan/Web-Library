@@ -1,7 +1,6 @@
 package Web::Library::Item;
 use Moose;
 use Class::Load qw(load_class);
-our $VERSION = '0.01';
 has name    => (is => 'ro', isa => 'Str', required => 1);
 has version => (is => 'ro', isa => 'Str', default  => 'latest');
 

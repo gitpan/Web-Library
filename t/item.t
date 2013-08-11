@@ -19,6 +19,5 @@ subtest 'Item with given version', sub {
 done_testing;
 
 package Web::Library::Foo;
-our $VERSION = '0.01';
 sub new { bless {}, shift }
 sub get_dir_for { "/path/to/$_[1]" }

@@ -25,7 +25,7 @@ sub get_manager {
 
 sub library_ok {
     my %args = @_;
-    subtest 'library_ok' => sub {
+    subtest "library_ok $args{version}" => sub {
         get_manager()
           ->mount_library({ name => $args{name}, version => $args{version} });
         include_path_ok($args{version});

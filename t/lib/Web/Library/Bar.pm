@@ -1,6 +1,5 @@
 package Web::Library::Bar;
 use Moose;
-our $VERSION = '0.01';
 sub get_dir_for { "/bar-path/to/$_[1]" }
 
 sub css_assets_for {

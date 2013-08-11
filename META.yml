@@ -1,13 +1,13 @@
 ---
 abstract: 'Manager for wrappers around client-side libraries'
 author:
-  - 'Marcel Gruenauer <marcel@cpan.org>'
+  - 'The following person is the author of all the files provided in'
 build_requires:
   Test::More: 0.94
 configure_requires:
-  ExtUtils::MakeMaker: 6.58
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.130880'
+  Module::Build::Tiny: 0.025
+dynamic_config: 0
+generated_by: 'Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,7 +16,11 @@ name: Web-Library
 no_index:
   directory:
     - t
+    - xt
     - inc
+    - share
+    - eg
+    - examples
 requires:
   Class::Load: 0
   Cwd: 0
@@ -29,5 +33,7 @@ requires:
 resources:
   bugtracker: https://github.com/marcelgruenauer/Web-Library/issues
   homepage: https://github.com/marcelgruenauer/Web-Library
-  repository: git://github.com/marcelgruenauer/Web-Library.git
-version: 0.02
+  repository: https://github.com/marcelgruenauer/Web-Library.git
+version: 0.04
+x_contributors:
+  - 'Marcel Gruenauer <hanekomu@gmail.com>'
