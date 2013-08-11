@@ -6,7 +6,7 @@ use File::ShareDir ();
 use Cwd qw(abs_path);
 requires qw(latest_version css_assets_for javascript_assets_for);
 
-# This is a version of dist_dir() that takes into account local
+# This is a version of dist_dir() that takes into account local.
 # Taken from File::Share, but that didn't work for me.
 sub dist_dir {
     my ($dist) = @_;
@@ -18,8 +18,10 @@ sub dist_dir {
     $path = File::Spec->catfile(@split);
     my $local_share = File::Spec->catfile($path, 'share');
     my $makefile_pl = File::Spec->catfile($path, 'Makefile.PL');
-    return -e $makefile_pl
-      && -e $local_share ? $local_share : File::ShareDir::dist_dir($dist);
+    my $dist_ini    = File::Spec->catfile($path, 'dist.ini');
+    return ((-e $makefile_pl || -e $dist_ini) && -e $local_share)
+      ? $local_share
+      : File::ShareDir::dist_dir($dist);
 }
 
 sub dist_name {

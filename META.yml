@@ -34,6 +34,6 @@ resources:
   bugtracker: https://github.com/marcelgruenauer/Web-Library/issues
   homepage: https://github.com/marcelgruenauer/Web-Library
   repository: https://github.com/marcelgruenauer/Web-Library.git
-version: 0.04
+version: 0.05
 x_contributors:
   - 'Marcel Gruenauer <hanekomu@gmail.com>'

@@ -44,7 +44,7 @@ sub include_path_ok {
                 fail('cannot find project root directory');
                 last;
             }
-            if (-f 'Makefile.PL') {
+            if (-f 'Makefile.PL' || -f 'dist.ini') {
                 $root = abs_path($root);
                 my @inc = get_manager()->include_paths;
                 is scalar(@inc), 1, 'there is only one include path';
