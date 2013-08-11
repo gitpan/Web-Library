@@ -3,6 +3,7 @@ abstract: 'Manager for wrappers around client-side libraries'
 author:
   - 'The following person is the author of all the files provided in'
 build_requires:
+  Test::Differences: 0
   Test::More: 0.94
 configure_requires:
   Module::Build::Tiny: 0.025
@@ -34,6 +35,6 @@ resources:
   bugtracker: https://github.com/marcelgruenauer/Web-Library/issues
   homepage: https://github.com/marcelgruenauer/Web-Library
   repository: https://github.com/marcelgruenauer/Web-Library.git
-version: 0.05
+version: 0.06
 x_contributors:
   - 'Marcel Gruenauer <hanekomu@gmail.com>'

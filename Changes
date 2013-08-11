@@ -1,5 +1,9 @@
 Revision history for Perl extension Web-Library
 
+0.06  2013-08-12 01:17:47 CEST
+    [Improvements]
+        - cpanfile: require Test::Differences
+
 0.05  2013-08-11 19:54:37 CEST
     [Improvements]
         - Now works for Dist::Milla-based distribution wrappers that don't have

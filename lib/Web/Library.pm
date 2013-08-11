@@ -2,7 +2,7 @@ package Web::Library;
 use MooseX::Singleton;
 use Params::Validate qw(:all);
 use Web::Library::Item;
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 has 'libraries' => (
     traits  => ['Array'],
     is      => 'ro',

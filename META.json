@@ -24,11 +24,6 @@
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Test::More" : "0.94"
-         }
-      },
       "configure" : {
          "requires" : {
             "Module::Build::Tiny" : "0.025"
@@ -50,6 +45,12 @@
             "Params::Validate" : "0",
             "perl" : "5.014000"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Differences" : "0",
+            "Test::More" : "0.94"
+         }
       }
    },
    "release_status" : "stable",
@@ -64,7 +65,7 @@
          "web" : "https://github.com/marcelgruenauer/Web-Library"
       }
    },
-   "version" : "0.05",
+   "version" : "0.06",
    "x_contributors" : [
       "Marcel Gruenauer <hanekomu@gmail.com>"
    ]
